@@ -1,0 +1,264 @@
+.ExpertiseBack {
+  height: 60vh;
+  background: url(http://startit.select-themes.com/wp-content/uploads/2015/10/services-title.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+}
+.Expertise-Text {
+  padding: 170px 80px;
+  color: #fff;
+}
+.Expertise-Text h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.Expertise-Text p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Expertise-Card {
+  margin: 70px 0;
+  height: 100%;
+}
+
+.Expertise-Card svg {
+  margin: 20px 20px;
+  font-size: 45px;
+  color: #adacac;
+}
+.Expertise-Card .card {
+  border: none;
+}
+.Expertise-Card h3 {
+  margin-bottom: 15px;
+}
+.Expertise-Card p {
+  color: #adacac;
+}
+
+.box {
+  width: 330px;
+  height: 8px;
+  background-color: #f8aa04;
+  transition: width 0.8s ease-in-out, height 0.8s ease-in-out,
+    background-color 0.8s ease-in-out;
+}
+
+.Card-Animate:hover .box {
+  width: 0px;
+}
+.Card-Animate:hover svg {
+  color: #f8aa04;
+}
+
+/* Service Styling Part */
+.Service {
+  height: 100vh;
+}
+.ServiceBack {
+  height: 50vh;
+  background: url("../Assets/service.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+}
+.Service-Text {
+  padding: 170px 80px;
+  color: #fff;
+}
+.Service-Text h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.Service-Card {
+  height: 100%;
+  margin-top: -250px;
+}
+.Service-Heading {
+  text-align: center;
+}
+.Service-Heading p {
+  padding: 10px 180px;
+}
+/* AI Styling Part */
+
+.AIBack {
+  height: 55vh;
+  background: url("../Assets/AI.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+}
+.AI-World {
+  background-color: #e2e2e2;
+}
+.AI-World img {
+  padding-top: 80px;
+  padding-left: 150px;
+}
+.AI-left {
+  padding: 100px 30px;
+}
+.AI-left h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.AI-Para {
+  margin-top: 30px;
+}
+.AI-Card {
+  padding: 0px 50px;
+}
+.AI-Sub-Card {
+  border: 0.2px dashed #adacac;
+}
+.AI-Case {
+  height: 100%;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+}
+.AI-Case h1 {
+  padding-top: 60px;
+  text-align: center;
+}
+.Case-link {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.Case-link li {
+  margin: 5px 20px;
+  font-size: 18px;
+  color: #000000;
+}
+.Case-link span {
+  color: #f8aa04;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+/* Big Data Styling Part */
+
+.BigData {
+  height: 100%;
+  margin: 70px 0;
+}
+.Big-Data {
+  padding: 0px 60px;
+}
+.Big-Data h1 {
+  margin-left: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+.Big-Data p {
+  color: #797979;
+  margin: 30px 0;
+}
+.Big-Data img {
+  padding: 60px 120px;
+}
+
+/* Data Engineering Styling Part */
+
+.Engineering {
+  height: 100%;
+  margin: 80px 0;
+}
+.Back-Engineer {
+  padding: 100px 70px;
+  height: 100%;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+}
+.Back-Engineer img {
+  padding-left: 50px;
+}
+.Back-Engineer h1 {
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+  margin-top: -20px;
+}
+.Back-Engineer p {
+  margin-top: 30px;
+  line-height: 30px;
+  color: #797979;
+  font-weight: 500;
+}
+
+/* EnterPrise Software development Style Part */
+
+.EnterPrises {
+  height: 100%;
+  margin: 50px 0;
+}
+.EnterPriseBack {
+  padding: 70px 60px;
+}
+
+.EnterPriseBack h1 {
+  color: #000000;
+  font-size: 40px;
+}
+.EnterPriseBack p {
+  color: #797979;
+  margin: 30px 0;
+  line-height: 30px;
+}
+.EnterPriseBack img {
+  margin-top: -30px;
+  margin-left: 100px;
+}
+
+@media (max-width: 900px) {
+  .Case-link {
+    display: block;
+  }
+  .box {
+    width: 200px;
+  }
+  .Expertise-Text {
+    padding: 140px 20px;
+  }
+  .Service-Text {
+    padding: 140px 30px;
+  }
+  .Service-Text h1 {
+    font-size: 35px;
+  }
+  .Service-Heading p {
+    padding: 0;
+  }
+  .AI-World img {
+    width: 250px;
+    padding-left: 0;
+  }
+  .AI-Sub-Card {
+    border: none;
+  }
+  .Big-Data img {
+    width: 220px;
+    padding: 0px;
+  }
+  .Back-Engineer img {
+    width: 200px;
+    margin-left: -50px;
+    margin-bottom: 40px;
+  }
+  .Back-Engineer h1 {
+    font-size: 35px;
+  }
+  .EnterPriseBack {
+    text-align: center;
+  }
+  .EnterPriseBack img {
+    width: 230px;
+    margin: 0;
+  }
+}

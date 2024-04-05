@@ -1,0 +1,258 @@
+.AboutBack {
+  height: 60vh;
+  /* width: 100%; */
+  background: url("../Assets/about3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -60px;
+}
+.About-Text {
+  padding: 150px 80px;
+  color: #fff;
+}
+.About-Text h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.About-Text p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.About-Youtube {
+  margin: 100px 0;
+  text-align: center;
+}
+.About-Youtube iframe {
+  margin-top: 50px;
+}
+.Vision {
+  height: 60vh;
+  width: 100%;
+  background: url("../Assets/about2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 20px;
+  margin-bottom: 100px;
+}
+.Sub-Vision {
+  color: #fff;
+  padding: 140px 30px;
+}
+.Sub-Vision p {
+  color: #adacac;
+}
+.Analytics {
+  margin: 50px 0;
+}
+.Analytics h1 {
+  text-align: center;
+}
+.Analytics-Card {
+  height: 350px;
+  margin-top: 40px;
+  width: 180px;
+}
+.Analytics-Card svg {
+  font-size: 35px;
+  font-weight: 800;
+  color: #797979;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.Analytics-Card p {
+  font-size: 20px;
+  font-weight: 800;
+  color: #000;
+}
+.ODDS-Founder {
+  margin: 70px 0;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+.Founder-Team {
+  display: flex;
+}
+.ODDS-Founder h1 {
+  text-align: center;
+  padding: 70px 0px;
+}
+.Partener {
+  margin: 50px 0;
+  height: 150px;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 50px 0;
+}
+.Sub-Partener {
+  margin: 20px 0;
+  padding: 0px 10px;
+}
+
+/* Service Carrer Support Styling Part */
+/* .Service-Career {
+  height: 100vh;
+} */
+.CareerBack {
+  height: 90%;
+  background: url("../Assets/career1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.CareerBack {
+  padding: 0px 70px;
+}
+.Career-heading {
+  padding: 140px 0px;
+  color: #fff;
+}
+.Career-heading h2 {
+  font-size: 50px;
+  font-weight: 800;
+}
+.Career-heading p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.Career-Button a {
+  font-weight: 500;
+  text-align: start;
+  width: 300px;
+  border-radius: 20px;
+  background: #000000bf;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px 30px;
+}
+.Career-heading a:hover {
+  background: #ffffff;
+  color: #000;
+}
+.Career-Button {
+  margin-top: 40px;
+}
+.Career-heading span {
+  font-size: 18px;
+}
+.Career6 {
+  margin-top: 100px;
+  max-width: 600px;
+  margin-right: 20px;
+}
+.YoutubeBack {
+  height: 100%;
+  background: url("../Assets/CarerYoutube.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Career-Youtube {
+  height: 100%;
+  padding: 120px 50px;
+}
+.Career-Youtube h2 {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 600;
+}
+.Career-Youtube p {
+  color: #797979;
+  font-size: 20px;
+  margin: 30px 0px;
+  line-height: 30px;
+}
+.Career-Youtube iframe {
+  margin-left: 70px;
+  height: 250px;
+  width: 450px;
+}
+.Career-Coaching {
+  height: 100%;
+  background-color: #e2e2e2;
+}
+.CareerHand {
+  padding: 100px 70px;
+}
+.CareerHand img {
+  width: 500px;
+  height: 400px;
+}
+.CareerHand h3 {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.CareerHand span {
+  font-size: 25px;
+  font-weight: 700;
+}
+.CareerHand ul {
+  margin-top: 20px;
+}
+.CareerHand li {
+  color: #797979;
+  font-size: 18px;
+  line-height: 30px;
+}
+.CareerHand button {
+  margin: 30px;
+  padding: 20px 35px;
+  color: #fff;
+  background: #f8aa04;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .Founder-Team {
+    display: block;
+    text-align: center;
+  }
+  .Analytics {
+    text-align: center;
+  }
+  .About-Text {
+    padding: 150px 20px;
+  }
+  .Career-heading a {
+    width: 100%;
+    text-align: center;
+  }
+  .Career-heading span {
+    padding-left: 0;
+    display: none;
+  }
+  .Career-heading {
+    text-align: center;
+  }
+  .Career-heading h2 {
+    margin-top: -50px;
+    font-size: 30px;
+  }
+  .Career-heading p {
+    font-size: 20px;
+  }
+  .Career-Youtube iframe {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .CareerHand h3 {
+    font-size: 25px;
+    margin: 0;
+    padding-top: 25px;
+  }
+  .CareerHand li {
+    font-size: 18px;
+    line-height: normal;
+    margin: 0;
+  }
+  .CareerHand img {
+    width: 100%;
+    height: 100%;
+  }
+  .CareerHand button {
+    margin-top: 20px !important;
+    margin: 0;
+  }
+}

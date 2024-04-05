@@ -1,0 +1,148 @@
+.Odd-logo {
+  font-size: 22px;
+  text-decoration: none;
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+.NavBar-list a {
+  color: red !important;
+}
+.NavBar-list {
+  margin-left: 100px !important;
+}
+.NavBar-list li {
+  margin-left: 40px !important;
+}
+
+.NavBar-list a:hover {
+  color: black;
+  background-color: rgb(240, 155, 64);
+  padding: 2px 8px !important;
+  border-radius: 5px;
+}
+.NavBar-list a:active {
+  background-color: rgb(240, 155, 64);
+  padding: 2px 8px !important;
+  border-radius: 5px;
+}
+.Nav-search {
+  font-size: 24px;
+}
+/* Training Styling Part */
+.Sub-training {
+  margin-left: -300px;
+  width: 100%;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 80px;
+}
+/* .Sub-Training {
+  background-color: antiquewhite;
+  position: relative;
+  top: 150px;
+} */
+.Sub-link {
+  padding: 30px 0px;
+}
+.Sub-link li {
+  margin-top: 15px;
+}
+/* Expertise Drop Styling */
+
+.Expert-Drop {
+  margin-left: 200px;
+  width: 20%;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 80px;
+}
+.Expert-Drop li {
+  margin: 15px 0px;
+  padding-left: -30px;
+
+  text-align: center;
+  font-size: 14px;
+}
+.Service-Drop {
+  margin-left: -70px;
+  width: 20%;
+  background-color: #f7f7f7;
+  position: absolute;
+  top: 40px;
+}
+.Service-Drop li {
+  margin: 15px 0px;
+  padding-left: -30px;
+
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Footer Styling Part */
+
+.Footer {
+  margin-top: 50px;
+  height: 100%;
+  background: url("../Assets/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+.FooterContact {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+.FooterContact h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.FooterContact p {
+  margin: 30px 0;
+  font-size: 20px;
+}
+.FooterContact button {
+  padding: 15px 30px;
+  color: #fff;
+  border: white !important;
+  background-color: rgb(240, 155, 64);
+}
+li {
+  list-style: none;
+}
+.Sub-Footer {
+  color: #fff;
+  margin-top: -30px;
+}
+.Sub-Footer span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.Sub-Footer h4 {
+  color: #ffff;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: -20px;
+}
+.Sub-Footer li {
+  text-align: center;
+  color: #ac9f9f;
+  margin-top: 20px;
+}
+.Sub-Footer input {
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+}
+@media (max-width: 900px) {
+  .Sub-training {
+    display: none;
+  }
+
+  .Expert-Drop {
+    margin: 0;
+    width: 80%;
+  }
+}
