@@ -15,6 +15,9 @@
 .Card-Section {
   margin-top: 20px;
 }
+  .ServiceFLex{
+    display: flex;
+  }
 /* Our Impact Styling */
 
 .Impact {

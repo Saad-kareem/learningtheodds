@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDatabase } from "react-icons/fa6";
+import CommonCard from "./CommonCard";
 import { ExpertiseCard } from "../sData/card1";
 
 const Expertise = () => {
@@ -22,22 +22,16 @@ const Expertise = () => {
       <div className=" Expertise-Card">
         <div className="container">
           <div className="row">
-            {ExpertiseCard.map((expert, index) => {
-              return (
-                <div className="col-md-4">
-                  <div class="card Card-Animate">
-                    {expert.svg}
-                    <div class="card-body">
-                      <h3 class="card-title">{expert.title}</h3>
-                      <p class="card-text">{expert.para}</p>
-                    </div>
-                     <div className="box"></div>
-                  </div>
-                    
-
-                </div>
-              );
-            })}
+          {ExpertiseCard.map((expert, index) => {
+            return (
+              <CommonCard
+                img={expert.svg}
+                title={expert.title}
+                para={expert.para}
+              />
+            );
+          })}
+                  
           </div>
         </div>
       </div>

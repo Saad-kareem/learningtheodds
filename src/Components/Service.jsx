@@ -1,5 +1,6 @@
 import React from "react";
 import { ServiceCardes } from "../sData/card1";
+import CommonCard from "./CommonCard";
 const Service = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="container Service-Card ">
+      <div className=" container Service-Card ">
         <div className="Service-Heading">
           <h1>Dice Recruitment Services</h1>
           <p>
@@ -27,28 +28,18 @@ const Service = () => {
           </p>
         </div>
         <div className="row Expertise-Card">
-         {
-          ServiceCardes.map((expert) =>{
-            return(
-              <div className="col-md-4 ">
-          <div class="card Card-Animate">
-            {expert.svg}
-            <div class="card-body">
-              <h3 class="card-title">{expert.title}</h3>
-              <p class="card-text">{expert.para}</p>
-            </div>
-            <div className="box"></div>
-          </div>
+          {ServiceCardes.map((expert, index) => {
+            return (
+              <CommonCard
+                img={expert.svg}
+                title={expert.title}
+                para={expert.para}
+              />
+            );
+          })}
         </div>
-            )
-          })
-         }
-        
-  </div>
-           </div>
-        
       </div>
-    
+    </div>
   );
 };
 
