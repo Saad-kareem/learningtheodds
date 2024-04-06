@@ -2,6 +2,7 @@ import React from "react";
 import Hero4 from "../Assets/hero4.png";
 import Hero1 from "../Assets/hero1.png";
 import Hero5 from "../Assets/hero5.png";
+import Carosual from "./Carosual";
 const HeroSection = () => {
   return (
     <div className="Hero-Section">
@@ -16,7 +17,7 @@ const HeroSection = () => {
             <button className="btn ">Explore Training</button>
           </div>
           <div className="col-md-4 Hero-right">
-            <img className="hero4" src={Hero4} />
+            <img className="hero4 " src={Hero4} />
             <div>
               <img className="hero1" src={Hero1} />
             </div>

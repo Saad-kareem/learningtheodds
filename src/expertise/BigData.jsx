@@ -5,7 +5,7 @@ import { MdOutlineArrowCircleRight } from "react-icons/md";
 import Case from "./Case";
 const BigData = () => {
   return (
-    <div className="BigData">
+    <div className="BigData" id="Big-Data-Analytics">
       <div className="container-fluid">
         <div className="row Big-Data">
           <div className="col-md-6">

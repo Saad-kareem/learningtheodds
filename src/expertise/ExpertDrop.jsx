@@ -13,13 +13,19 @@ const ExpertDrop = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink>Data Analytics</NavLink>
+              <NavLink to="/artificial-intelligence/#Big-Data-Analytics">
+                Data Analytics
+              </NavLink>
             </li>
             <li>
-              <NavLink>Data Engineering</NavLink>
+              <NavLink to="/artificial-intelligence/#Data-Engineering">
+                Data Engineering
+              </NavLink>
             </li>
             <li>
-              <NavLink>Software Development</NavLink>
+              <NavLink to="/artificial-intelligence/#Enterprise-Software-Development">
+                Software Development
+              </NavLink>
             </li>
           </ul>
         </div>

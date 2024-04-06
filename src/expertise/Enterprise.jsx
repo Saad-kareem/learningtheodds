@@ -6,7 +6,7 @@ import Case from "./Case";
 
 const Enterprise = () => {
   return (
-    <div className="EnterPrises">
+    <div className="EnterPrises" id="Enterprise-Software-Development">
       <div className="container-fluid">
         <div className="row EnterPriseBack">
           <div className="col-md-6">

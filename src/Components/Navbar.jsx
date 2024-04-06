@@ -1,7 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { FaSalesforce, FaSearch } from "react-icons/fa";
+import logo from "../Assets/dice-logo.png";
 import TrainingSub from "../expertise/TrainingSub";
 import ExpertDrop from "../expertise/ExpertDrop";
 import ServiceDrop from "../expertise/ServiceDrop";
@@ -11,23 +12,30 @@ const Navbar = () => {
   const [openTraining, setTrainOpen] = useState(false);
   const [openExpert, setOpenExpert] = useState(false);
   const [openService, setOpenService] = useState(false);
+  const [timeoutId, setTimeoutId] = useState(null);
 
   const TrainingOpen = () => {
+    clearTimeout(timeoutId);
     setTrainOpen(true);
   };
+
   const closeTrain = () => {
-    setTrainOpen(false);
+    const id = setTimeout(() => {
+      setTrainOpen(false);
+    }, 2000);
+    setTimeoutId(id);
   };
 
   const ExpertiseOpen = () => {
-      if(!openExpert){
-        setOpenExpert(true);
-      }
-      else{
-        setOpenExpert(false);
-      }
+    setOpenExpert(true);
   };
 
+  const closeExpertise = () => {
+    const id = setTimeout(() => {
+      setOpenExpert(false);
+    }, 5000);
+    setTimeoutId(id);
+  };
   const ServiceOpen = () => {
     if (!openService) {
       setOpenService(true);
@@ -35,16 +43,19 @@ const Navbar = () => {
       setOpenService(false);
     }
   };
-  // const closeService = () => {
-  //   setOpenService(false);
-  // };
+  const closeService = () => {
+    const id = setTimeout(() => {
+      setOpenService(false);
+    }, 5000);
+    setTimeoutId(id);
+  };
 
   return (
     <div>
       <nav className=" NavBar navbar navbar-expand-lg navbar-light  ">
         <div className="container ">
           <NavLink className="Odd-logo" to="/">
-            Learning the Odds
+            Learning The ODDS
           </NavLink>
           <button
             className="navbar-toggler"
@@ -79,6 +90,7 @@ const Navbar = () => {
                   className="nav-link"
                   to="/expertise"
                   onMouseEnter={ExpertiseOpen}
+                  onMouseLeave={closeExpertise}
                 >
                   Our Expertise
                 </NavLink>
@@ -99,8 +111,9 @@ const Navbar = () => {
               <li className="nav-item ">
                 <NavLink
                   className="nav-link"
-                  to="/service"
+                  to="/recruitment/services/"
                   onMouseEnter={ServiceOpen}
+                  onMouseLeave={closeService}
                 >
                   Services
                 </NavLink>

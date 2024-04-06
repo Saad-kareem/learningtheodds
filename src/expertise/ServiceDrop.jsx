@@ -11,19 +11,23 @@ const ServiceDrop = () => {
                 <NavLink to="/odds-career-support">Career Support</NavLink>
               </li>
               <li>
-                <NavLink to="/service">Consultancy</NavLink>
+                <NavLink to="/recruitment/services/">Consultancy</NavLink>
               </li>
               <li>
-                <NavLink to="/service">Process Outsorcing </NavLink>
+                <NavLink to="/recruitment/services/">
+                  Process Outsorcing{" "}
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/service">Contract Resource</NavLink>
+                <NavLink to="/recruitment/services/">Contract Resource</NavLink>
               </li>
               <li>
-                <NavLink to="/service">Resume Search</NavLink>
+                <NavLink to="/recruitment/services/">Resume Search</NavLink>
               </li>
               <li>
-                <NavLink to="/service">Capability Building</NavLink>
+                <NavLink to="/recruitment/services/">
+                  Capability Building
+                </NavLink>
               </li>
             </ul>
           </div>
