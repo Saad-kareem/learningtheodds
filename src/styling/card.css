@@ -124,6 +124,7 @@
   font-size: 35px;
 }
 .Price-Package .card {
+  border-radius: 10px;
   border: none;
   background-color: #fff;
   width: 80%;

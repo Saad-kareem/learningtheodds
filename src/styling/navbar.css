@@ -148,14 +148,48 @@ li {
   border-radius: 100%;
   background-color: #373737;
   cursor: pointer; */
-
-
+.input1 {
+  padding: 6px 10px;
+  margin-right: 30px;
+  width: 45%;
+}
+.input2 {
+  margin-top: 30px;
+}
+.Footer_Radio {
+  margin-top: 30px;
+}
+.Footer_Radio input {
+  margin-left: 10px;
+}
+.Footer_Radio label {
+  margin-left: 5px;
+}
+.input3 {
+  width: 30%;
+  margin-left: 20px;
+  padding: 6px 10px;
+}
+.Student {
+  margin-top: 40px;
+}
+.Work {
+  margin-top: 40px;
+}
 
 @media (max-width: 900px) {
   .Sub-training {
     display: none;
   }
-
+  .Footer_Radio {
+    text-align: center;
+  }
+  .input3 {
+    margin-top: 20px;
+  }
+  .input1 {
+    margin-top: 20px;
+  }
   .Expert-Drop {
     margin: 0;
     width: 80%;

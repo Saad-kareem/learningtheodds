@@ -1,16 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
+import Student from "../expertise/Student";
+import Work from "../expertise/Work";
 
 const Footer = () => {
+  const [student, setStudent] = useState(false);
+  const [work, setWork] = useState(false);
+
+  const openStudent = () => {
+    if (!student) {
+      setStudent(true);
+      setWork(false);
+    }
+  };
+  const openWork = () => {
+    if (!work) {
+      setWork(true);
+      setStudent(false);
+    }
+  };
+
   return (
     <div className="Footer">
       <div className="container">
         <div className="FooterContact">
-          <h1>Contact Us For Any Queries!</h1>
+          <h1>Thank you for stopping by!</h1>
           <p>
-            Get in touch with us today and we’ll get back to you as quickly as
-            possible!
+            Fill out the form to schedule a session with our representatives &
+            get in touch with our Career experts !
           </p>
-          <button className="btn">Contact Us!</button>
+          <input type="text" className="input1" placeholder="Name" />
+          <input
+            type="text"
+            className="input1"
+            placeholder="Mobile no.(ex.03496581580)"
+          />
+          <input type="email" className="input1 input2" placeholder="Email" />
+          <input type="text" className="input1 input2" placeholder="City" />
+
+          <div className="Footer_Radio">
+            <input
+              class="form-check-input "
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+              onClick={openStudent}
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Student
+            </label>
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+              onClick={openWork}
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              Working Professional
+            </label>
+          </div>
+
+          {student && <Student />}
+          {work && <Work />}
         </div>
         <div className="row Sub-Footer">
           <div className="col-md-3">
