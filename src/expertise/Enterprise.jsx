@@ -26,7 +26,7 @@ const Enterprise = () => {
           <div className="row Expertise-Card">
             {SoftwareCard.map((expert, index) => {
               return (
-                <div className="col-md-6">
+                <div className="col-md-6" key={index}>
                   <div class="card Card-Animate">
                     <div class="card-body">
                       <h3 class="card-title">{expert.title}</h3>

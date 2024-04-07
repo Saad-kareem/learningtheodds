@@ -1,5 +1,5 @@
 import React from "react";
-import { Member } from "../sData/Member";
+import { Member, Packages } from "../sData/Member";
 import { IoIosArrowForward } from "react-icons/io";
 import CareerCoaching from "../Assets/CareerCoach.png";
 import Benefit1 from "../Assets/6.png";
@@ -126,21 +126,46 @@ const ServiceCareer = (props) => {
           li4="  Suggestions on setting your goals and objectives"
         />
         <div className="row ODDS-Founder Founders Odd-Team">
-        <h1>Meet your Personal Career Experts!</h1>
-        <div className="Founder-Team">
-          {Member.map((Item) => (
-            <div className="col-md-3 ">
-              <img src={Item.image} />
-              <h5>{Item.Name}</h5>
-              <p>{Item.Type}</p>
-            </div>
-          ))}
+          <h1>Meet your Personal Career Experts!</h1>
+          <div className="Founder-Team">
+            {Member.map((Item) => (
+              <div className="col-md-3 ">
+                <img src={Item.image} />
+                <h5>{Item.Name}</h5>
+                <p>{Item.Type}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="Price-Package">
+          <div className="row">
+            <h1>Pricing Information</h1>
+            {Packages.map((data, index) => {
+              return (
+                <div className="col-md-4 Card_SUb" key={index}>
+                  <div class="card Card-Text shadow-lg">
+                    <div class="card-body">
+                      <h2 class="card-title">{data.pkg}</h2>
+                      <p class="card-text">
+                        <p className="Card_Para">{data.para}</p>
+
+                        <h3>
+                          <span>PKR</span>
+                          {data.price}
+                          <p>/PerHr</p>
+                        </h3>
+                      </p>
+                      <button className="btn btn-outline-warning">
+                        SIGN UP!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-      </div>
-         
-       
-
     </div>
   );
 };

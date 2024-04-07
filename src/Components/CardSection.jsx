@@ -13,7 +13,7 @@ const CardSection = () => {
           <div className="row Card-Section">
             {cards.map((data, index) => {
               return (
-                <div className="col-md-4  ">
+                <div className="col-md-4  " key={index}>
                   <div className="card ">
                     <img
                       className="card-img-top"

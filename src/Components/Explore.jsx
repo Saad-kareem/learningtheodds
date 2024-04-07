@@ -11,7 +11,7 @@ const Explore = () => {
           <div className="row  Explore-cards">
             {ExploreCards.map((data, index) => {
               return (
-                <div className="col-md-3 Col-Card">
+                <div className="col-md-3 Col-Card" key={index}>
                   <div className="card">
                     <img
                       className="card-img-top"

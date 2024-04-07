@@ -19,8 +19,8 @@ const Impact = () => {
               <div className="conatiner Member">
           <div className="row Founders">
             <h1>Our Team</h1>
-            {Member.map((Item) => (
-              <div className="col-md-3">
+            {Member.map((Item,index) => (
+              <div className="col-md-3" key={index}>
                 <img src={Item.image} />
                 <h5>{Item.Name}</h5>
                 <p>{Item.Type}</p>

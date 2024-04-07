@@ -29,3 +29,21 @@ export const Member = [
     Type: "Reg No. 4479-FBAS/BSCS4/F21A",
   },
 ];
+
+export const Packages = [
+  {
+    pkg: "Package1",
+    para: "Customized Coaching",
+    price: "2500",
+  },
+  {
+    pkg: "Package2",
+    para: "Resume & LinkedIn Profile",
+    price: "3000",
+  },
+  {
+    pkg: "Package3",
+    para: "Industry Ready Portfolio",
+    price: "1500",
+  },
+];

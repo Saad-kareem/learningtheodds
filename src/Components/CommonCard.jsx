@@ -1,8 +1,7 @@
 import React from "react";
 const CommonCard = (props) => {
-       
   return (
-    <div className="col-md-4 ">
+    <div className="col-md-4">
       <div class="card Card-Animate">
         {props.img}
         <div class="card-body">

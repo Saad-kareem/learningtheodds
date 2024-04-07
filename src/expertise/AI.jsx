@@ -45,7 +45,7 @@ const AI = () => {
           <div className="row Expertise-Card">
             {AICard.map((expert, index) => {
               return (
-                <div className="col-md-6 AI-Sub-Card">
+                <div className="col-md-6 AI-Sub-Card" key={index}>
                   <div class="card Card-Animate">
                     {expert.svg}
                     <div class="card-body">

@@ -42,7 +42,7 @@ const About = () => {
             <div className="row">
               {AboutCard.map((data, index) => {
                 return (
-                  <div className="col-md-3 Analytics-Animate ">
+                  <div className="col-md-3 Analytics-Animate" key={index}>
                     <div className="card Analytics-Card">
                       {data.svg}
                       <div className="card-body">
@@ -59,8 +59,8 @@ const About = () => {
           <div className="row ODDS-Founder Founders">
             <h1>ODDS Founder</h1>
             <div className="Founder-Team">
-              {Member.map((Item) => (
-                <div className="col-md-3 ">
+              {Member.map((Item,index) => (
+                <div className="col-md-3 " key={index}>
                   <img src={Item.image} />
                   <h5>{Item.Name}</h5>
                   <p>{Item.Type}</p>
@@ -74,7 +74,7 @@ const About = () => {
             </div>
             {Parteners.map((Part, index) => {
               return (
-                <div className="col-md-2 Sub-Partener">
+                <div className="col-md-2 Sub-Partener" key={index}>
                   <img src={Part.img} />
                 </div>
               );
