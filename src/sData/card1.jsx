@@ -29,6 +29,14 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 import { FaRegUserCircle } from "react-icons/fa";
 import { BsPeople } from "react-icons/bs";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import online1 from "../Assets/Online1.png";
+import online2 from "../Assets/online2.png";
+import online3 from "../Assets/online3.png";
+import online4 from "../Assets/online4.png";
+import online5 from "../Assets/online5.png";
+import online6 from "../Assets/online6.png";
+import online7 from "../Assets/online7.png";
+import online8 from "../Assets/online8.png";
 
 export const cards = [
   {
@@ -278,5 +286,39 @@ export const SoftwareCard = [
   {
     title: "2. UI/UX Designing ",
     para: "Build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result. When you choose our services, you get everything to realize your product idea properly, from experience of working with notable organizations to design standards that will help us deliver your product quicker and without loss in quality. Our decade-long experience has allowed us to craft an efficient design process that brings solid results to our clients quicker. ",
+  },
+];
+export const OnlineTrain1 = [
+  {
+    img: online1,
+    title: "Data Science  & Machine Learning",
+  },
+  {
+    img: online2,
+    title: "Data Warehouse  & Bussiness Analytics",
+  },
+  {
+    img: online3,
+    title: "Big Data Analytics",
+  },
+  {
+    img: online4,
+    title: "Data Science for Non-Coders",
+  },
+  {
+    img: online5,
+    title: "Computer Vision",
+  },
+  {
+    img: online6,
+    title: "DevOps Professional Training",
+  },
+  {
+    img: online7,
+    title: "Bussiness Analytics",
+  },
+  {
+    img: online8,
+    title: "Power BI Extensive Workshop",
   },
 ];

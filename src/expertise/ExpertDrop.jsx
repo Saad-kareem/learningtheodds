@@ -1,14 +1,16 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
-const ExpertDrop = () => {
+const ExpertDrop = ({OPenFooter3}) => {
   return (
     <div className="container Expert-Drop">
       <div className="row">
         <div className="col-md-12">
           <ul className="Expert-Links">
             <li>
-              <NavLink to="/artificial-intelligence">
+              <NavLink to="/artificial-intelligence"
+                onClick={OPenFooter3}
+              >
                 Artificial Intelligence
               </NavLink>
             </li>

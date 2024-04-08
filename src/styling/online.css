@@ -1,0 +1,92 @@
+.OnlineTrain {
+  height: 100%;
+}
+
+.OnlineBack {
+  height: 100%;
+  width: 100%;
+  background: url("../Assets/onlineTrain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Online-Heading {
+  padding: 150px 80px;
+  width: 55%;
+}
+.Online-Heading h1 {
+  color: #ef9d19;
+  font-size: 37px;
+  font-weight: 600;
+}
+.Online-Heading p {
+  margin-top: 10px;
+  color: #333333;
+  font-size: 18px;
+}
+.AboutTraining {
+  padding: 0px 10px;
+  margin: 80px 0px;
+  text-align: center;
+}
+.AboutTraining h2 {
+  font-size: 25px;
+  color: #222222;
+}
+.AboutTraining p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #797979;
+}
+.OnlineService {
+  margin: 50px 0px;
+}
+.OnlineService img {
+  height: 400px;
+}
+.OnlineCard {
+  padding: 0px 70px;
+  text-align: center;
+}
+.Online-Card-Heading {
+  margin: 40px 0px;
+}
+.Online-Card-Heading p {
+  font-size: 14px;
+  color: #797979;
+  margin-top: 10px;
+}
+#onlinecard {
+  margin-top: 30px;
+  height: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  perspective: 1000px;
+}
+#onlinecard:hover {
+  background-color: #ef9d19;
+  transform: rotateY(60deg);
+  transform: rotateY(-60deg);
+}
+#onlinecard img {
+  width: 170px;
+}
+#onlinecard h5 {
+  line-height: 30px;
+  padding: 30px 50px;
+}
+.OnlineLast img {
+  border-radius: 20px;
+  height: 270px;
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: -80px;
+}
+@media (max-width: 900px) {
+  .Online-Heading {
+    width: 100%;
+    padding: 70px 30px;
+  }
+  .OnlineService img {
+    width: 100%;
+  }
+}

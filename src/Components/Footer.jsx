@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Student from "../expertise/Student";
 import Work from "../expertise/Work";
+import Scroll from "./Scroll";
 
 const Footer = () => {
   const [student, setStudent] = useState(false);
@@ -112,6 +113,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+        <Scroll/>
     </div>
   );
 };

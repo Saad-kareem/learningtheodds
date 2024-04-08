@@ -1,4 +1,5 @@
 import React from "react";
+import { CiPlay1 } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { FaSalesforce, FaSearch } from "react-icons/fa";
@@ -7,7 +8,7 @@ import TrainingSub from "../expertise/TrainingSub";
 import ExpertDrop from "../expertise/ExpertDrop";
 import ServiceDrop from "../expertise/ServiceDrop";
 
-const Navbar = () => {
+const Navbar = ({ OPenFooter, OPenFooter2,OPenFooter3 }) => {
   const [show, setShow] = useState(false);
   const [openTraining, setTrainOpen] = useState(false);
   const [openExpert, setOpenExpert] = useState(false);
@@ -51,7 +52,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="Main-Navbar">
       <nav className=" NavBar navbar navbar-expand-lg navbar-light  ">
         <div className="container ">
           <NavLink className="Odd-logo" to="/">
@@ -75,12 +76,16 @@ const Navbar = () => {
               style={{ fontSize: 19 }}
             >
               <li className="nav-item">
-                <NavLink className="nav-link  home-link" to="/">
+                <NavLink
+                  className="nav-link  home-link"
+                  to="/"
+                  onClick={OPenFooter}
+                >
                   Home
                 </NavLink>
               </li>
               <li className="nav-item ">
-                <NavLink className="nav-link" to="/About">
+                <NavLink className="nav-link" to="/About" onClick={OPenFooter}>
                   About
                 </NavLink>
               </li>
@@ -91,18 +96,20 @@ const Navbar = () => {
                   to="/expertise"
                   onMouseEnter={ExpertiseOpen}
                   onMouseLeave={closeExpertise}
+                  onClick={OPenFooter}
                 >
                   Our Expertise
                 </NavLink>
               </li>
 
-              {openExpert && <ExpertDrop />}
+              {openExpert && <ExpertDrop OPenFooter3={OPenFooter3} />}
               <li className="nav-item ">
                 <NavLink
                   className="nav-link"
                   to="/"
                   onMouseEnter={TrainingOpen}
                   onMouseLeave={closeTrain}
+                  onClick={OPenFooter}
                 >
                   Trainings
                 </NavLink>
@@ -114,13 +121,14 @@ const Navbar = () => {
                   to="/recruitment/services/"
                   onMouseEnter={ServiceOpen}
                   onMouseLeave={closeService}
+                  onClick={OPenFooter}
                 >
                   Services
                 </NavLink>
               </li>
-              {openService && <ServiceDrop />}
+              {openService && <ServiceDrop OPenFooter2={OPenFooter2} />}
               <li className="nav-item SearchBar ">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link" to="/" onClick={OPenFooter}>
                   <FaSearch className="Nav-search" />
                 </NavLink>
               </li>

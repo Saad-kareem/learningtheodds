@@ -1,3 +1,27 @@
+.Online {
+  margin-top: 1px;
+  height: 40px !important;
+  background-color: #000 !important;
+}
+.Online a {
+  color: #fff;
+}
+.Online button {
+  margin-top: 2px;
+  margin-right: 100px;
+  float: right;
+  background-color: #fe9c01;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+.Online svg {
+  font-size: 20px;
+}
+.Online button:hover {
+  background-color: #fe9c01;
+  color: #fff;
+}
 .Odd-logo {
   font-size: 22px;
   text-decoration: none;
@@ -106,8 +130,6 @@ a {
 .FooterContact button {
   padding: 15px 30px;
   color: #fff;
-  border: white !important;
-  background-color: rgb(240, 155, 64);
 }
 li {
   list-style: none;
@@ -136,22 +158,26 @@ li {
   border: none;
   outline: none;
 }
-/* .Scroll button {
+.Scroll button {
   color: #ffffff;
   position: absolute;
   right: 0;
   font-size: 2rem;
-  margin-right: 1rem;
-  margin-top: -8rem;
-  padding: 1rem;
+  margin-right: 3rem;
+  margin-top: -20rem;
+  padding: 0.5rem 0.8rem;
   border: none;
-  border-radius: 100%;
-  background-color: #373737;
-  cursor: pointer; */
+  background-color: #fe9c01;
+  cursor: pointer;
+  text-align: center;
+}
 .input1 {
   padding: 6px 10px;
   margin-right: 30px;
   width: 45%;
+  background-color: #fff;
+  border: none;
+  outline: none;
 }
 .input2 {
   margin-top: 30px;
@@ -169,12 +195,25 @@ li {
   width: 30%;
   margin-left: 20px;
   padding: 6px 10px;
+  background-color: #fff;
+  border: none;
+  outline: none;
 }
 .Student {
   margin-top: 40px;
 }
 .Work {
   margin-top: 40px;
+}
+.Footer3 {
+  margin-top: 50px;
+  height: 30%;
+  background: url("../Assets/Dark.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Footer3 .Sub-Footer {
+  padding-top: 140px;
 }
 
 @media (max-width: 900px) {
@@ -193,5 +232,19 @@ li {
   .Expert-Drop {
     margin: 0;
     width: 80%;
+  }
+  .input1 {
+    width: 100%;
+    display: block;
+  }
+  .input3 {
+    margin-left: 0;
+    width: 100%;
+    display: block;
+  }
+  .Online button {
+    margin: 0;
+    float: left;
+    margin-left: 15px;
   }
 }
