@@ -2,7 +2,7 @@ import React from "react";
 import { OnlineTrain1 } from "../sData/card1";
 import OnlineService from "../Assets/OnlineService.jpg";
 import approach from "../Assets/544.jpg";
-import OnlineLast from '../Assets/Online-Last.jpg'
+import OnlineLast from "../Assets/Online-Last.jpg";
 const OnlineTrain = () => {
   return (
     <div className="OnlineTrain">
@@ -54,7 +54,7 @@ const OnlineTrain = () => {
           {OnlineTrain1.map((data, index) => {
             return (
               <div className="col-md-4 " key={index}>
-                <div className="card  " id="onlinecard">
+                <div className="card flip-card  " id="onlinecard">
                   <img
                     className="card-img-top"
                     src={data.img}
@@ -68,9 +68,9 @@ const OnlineTrain = () => {
             );
           })}
         </div>
-          <div className="OnlineLast ">
-             <img src={OnlineLast} />
-          </div>
+        <div className="OnlineLast ">
+          <img src={OnlineLast} />
+        </div>
       </div>
     </div>
   );

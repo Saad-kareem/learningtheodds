@@ -81,10 +81,66 @@
   margin-top: 70px;
   margin-bottom: -80px;
 }
+
+.OPenButton {
+  height: 40px;
+  width: 220px;
+  background-color: #f8aa04;
+  color: #fff;
+  text-align: start;
+  padding: 10px 5px;
+  top: 615px;
+  right: 50px;
+  position: fixed;
+}
+.MessageOPen button:hover {
+  color: #fff;
+}
+.Message {
+  background-color: #fff;
+  height: 540px;
+  width: 380px;
+  position: fixed;
+  top: 115px;
+  right: 50px;
+}
+.Message-Menu {
+  background-color: #ef9d19;
+  text-align: center;
+}
+.Message-Menu h5 {
+  padding: 70px 30px;
+}
+.CloseButton {
+  font-size: 35px;
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  color: #fff;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+.Message-Input {
+  padding: 0px 10px;
+  margin-top: 20px;
+}
+.Message-Input input {
+  margin: 30px 0px;
+}
+.Message-Input button {
+  margin: 5px 0px;
+  padding: 10px 30px;
+  margin-left: 30%;
+}
+.textarea {
+  height: 80px;
+}
 @media (max-width: 900px) {
   .Online-Heading {
     width: 100%;
-    padding: 70px 30px;
+    padding: 60px 30px;
   }
   .OnlineService img {
     width: 100%;

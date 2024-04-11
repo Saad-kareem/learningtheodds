@@ -12,6 +12,7 @@ import Online1 from "./Components/Online";
 import OnlineTrain from "./Components/OnlineTrain";
 import Footer2 from "./Components/Footer2";
 import Footer3 from "./Components/Footer3";
+import MessageOPen from "./Components/MessageOPen";
 
 const App = () => {
   const [open, setOPen] = useState(true);
@@ -51,6 +52,7 @@ const App = () => {
           <Route path="/odds-career-support" element={<ServiceCareer />} />
           <Route path="/live-trainings" element={<OnlineTrain />} />
         </Routes>
+          <MessageOPen/>
         {open && <Footer2 />}
         {open1 && <Footer />}
         {ftr3 && <Footer3 />}

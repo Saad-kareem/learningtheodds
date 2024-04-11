@@ -11,6 +11,7 @@ const Home = () => {
         <CardSection/>
          <Impact/>
           <Explore/>
+           
     </div>
   );
 };
