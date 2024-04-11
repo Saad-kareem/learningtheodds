@@ -145,4 +145,37 @@
   .OnlineService img {
     width: 100%;
   }
+  .Message-Menu {
+    height: 150px;
+    background-color: #ef9d19;
+    text-align: center;
+  }
+  .Message-Menu h5 {
+    padding: 40px 20px;
+  }
+  .Message-Input {
+    margin-top: -5px;
+  }
+  .Message-Input button {
+    margin-top: -5px;
+  }
+  .Message {
+    background-color: #fff;
+    height: 472px;
+    width: 300px;
+    position: fixed;
+    top: 115px;
+    right: 30px;
+  }
+  .OPenButton {
+    height: 40px;
+    width: 150px;
+    background-color: #f8aa04;
+    color: #fff;
+    text-align: start;
+    padding: 10px 5px;
+    top: 555px;
+    right: 30px;
+    position: fixed;
+  }
 }
