@@ -29,38 +29,41 @@ const Footer = () => {
             Fill out the form to schedule a session with our representatives &
             get in touch with our Career experts !
           </p>
-          <input type="text" className="input1" placeholder="Name" />
-          <input
-            type="text"
-            className="input1"
-            placeholder="Mobile no.(ex.03496581580)"
-          />
-          <input type="email" className="input1 input2" placeholder="Email" />
-          <input type="text" className="input1 input2" placeholder="City" />
-
-          <div className="Footer_Radio">
+          <form>
+            <input type="text" className="input1" placeholder="Name" />
             <input
-              class="form-check-input "
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-              onClick={openStudent}
+              type="text"
+              className="input1"
+              placeholder="Mobile no.(ex.03496581580)"
             />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Student
-            </label>
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-              onClick={openWork}
-            />
-            <label class="form-check-label" for="flexRadioDefault1">
-              Working Professional
-            </label>
-          </div>
+            <input type="email" className="input1 input2" placeholder="Email" />
+            <input type="text" className="input1 input2" placeholder="City" />
 
+            <div className="Footer_Radio">
+              <input
+                class="form-check-input "
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                onClick={openStudent}
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Student
+              </label>
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
+                onClick={openWork}
+              />
+              <label class="form-check-label" for="flexRadioDefault1">
+                Working Professional
+              </label>
+            </div>
+
+            <button className="btn btn-warning mt-4">Send Your Query</button>
+          </form>
           {student && <Student />}
           {work && <Work />}
         </div>
@@ -113,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-        <Scroll/>
+      <Scroll />
     </div>
   );
 };
