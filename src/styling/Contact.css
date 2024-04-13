@@ -1,0 +1,85 @@
+.Contact {
+  height: 100%;
+}
+
+.ContactBack {
+  height: 60vh;
+  /* width: 100%; */
+  background: url("../Assets/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: -30px; */
+}
+.ContactPart {
+  height: 100%;
+  margin: 70px;
+}
+.ContactPart h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.ContactPart p {
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  color: #797979;
+}
+.ContactPart form {
+  margin-top: 50px;
+}
+.ContactPart input {
+  margin: 10px 0px;
+}
+.ContactPart textarea {
+  min-height: 150px;
+  margin: 10px 0;
+}
+.ContactPart button {
+  margin: 20px 0px;
+  padding: 15px 50px;
+  color: #fff;
+}
+.ContactPart button:hover {
+  background-color: #222222;
+  color: #fe9c01;
+}
+.contact-right1 {
+  margin-top: 90px;
+  margin-left: 60px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.contact-right1 svg {
+  margin-left: -50px;
+  color: #fff;
+  font-size: 40px;
+  padding: 10px;
+  background-color: #df9708;
+  border-radius: 50%;
+}
+.contact-right1 p {
+  width: 230px;
+}
+.contactCall {
+  margin-top: -200px !important;
+}
+
+@media (max-width: 900px) {
+  .contact-right1 {
+    text-align: center;
+  }
+  .contact-right1 p {
+    margin: 40px 0;
+    display: block;
+  }
+  .contact-right1 svg {
+    padding: 0;
+    margin-left: -70px;
+    border-radius: 0;
+    background-color: #fff;
+    color: #df9708;
+    font-size: 20px;
+  }
+}

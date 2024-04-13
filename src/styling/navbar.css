@@ -25,14 +25,17 @@
 .Odd-logo {
   font-size: 22px;
   text-decoration: none;
-  color: red;
+  color: #ac9f9f;
+}
+.Odd-logo:hover {
+  color: #ac9f9f;
 }
 a {
   text-decoration: none;
 }
-.NavBar-list a {
+/* .NavBar-list a {
   color: red !important;
-}
+} */
 .NavBar-list {
   margin-left: 100px !important;
 }
@@ -60,7 +63,7 @@ a {
   width: 100%;
   background-color: #f7f7f7;
   position: absolute;
-  top: 80px;
+  top: 90px;
 }
 /* .Sub-Training {
   background-color: antiquewhite;
@@ -80,7 +83,7 @@ a {
   width: 20%;
   background-color: #f7f7f7;
   position: absolute;
-  top: 80px;
+  top: 90px;
 }
 .Expert-Drop li {
   margin: 15px 0px;
@@ -90,11 +93,11 @@ a {
   font-size: 14px;
 }
 .Service-Drop {
-  margin-left: -70px;
+  margin-left: -130px;
   width: 20%;
   background-color: #f7f7f7;
   position: absolute;
-  top: 40px;
+  top: 80px;
 }
 .Service-Drop li {
   margin: 15px 0px;
@@ -158,6 +161,7 @@ li {
   border: none;
   outline: none;
 }
+
 .Scroll button {
   color: #ffffff;
   position: absolute;
@@ -215,7 +219,21 @@ li {
 .Footer3 .Sub-Footer {
   padding-top: 140px;
 }
+.Search {
+  border: none;
+  outline: none;
+  width: 96%;
+  height: 60px;
+  background-color: #fff !important;
+  border-bottom: 1px solid #ac9f9f;
+  padding: 0px 30px;
+}
 
+.SeachBar span {
+  cursor: pointer;
+  margin-left: -60px;
+  font-size: 25px;
+}
 @media (max-width: 900px) {
   .Sub-training {
     display: none;

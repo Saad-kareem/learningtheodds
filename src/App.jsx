@@ -13,11 +13,14 @@ import OnlineTrain from "./Components/OnlineTrain";
 import Footer2 from "./Components/Footer2";
 import Footer3 from "./Components/Footer3";
 import MessageOPen from "./Components/MessageOPen";
+import Search from "./Components/Search";
+import Contact from "./Components/Contact";
 
 const App = () => {
   const [open, setOPen] = useState(true);
   const [open1, setOPen1] = useState(false);
   const [ftr3, setFtr3] = useState(false);
+  const [search, setSearch] = useState(false);
 
   const OPenFooter = () => {
     setOPen(true);
@@ -34,15 +37,25 @@ const App = () => {
     setOPen1(false);
     setOPen(false);
   };
+  const SearchOPen = () => {
+    setSearch(true);
+  };
+  const SearchClose = () => {
+    setSearch(false);
+  };
   return (
     <div>
       <Router>
         <Online1 />
+        {search && <Search SearchClose={SearchClose} />}
+
         <Navbar
           OPenFooter={OPenFooter}
           OPenFooter2={OPenFooter2}
           OPenFooter3={OPenFooter3}
+          SearchOPen={SearchOPen}
         />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -51,8 +64,9 @@ const App = () => {
           <Route path="/recruitment/services/" element={<Service />} />
           <Route path="/odds-career-support" element={<ServiceCareer />} />
           <Route path="/live-trainings" element={<OnlineTrain />} />
+          <Route path="/contact" element={<Contact/>}/>
         </Routes>
-          <MessageOPen/>
+        <MessageOPen />
         {open && <Footer2 />}
         {open1 && <Footer />}
         {ftr3 && <Footer3 />}

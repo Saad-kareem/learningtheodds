@@ -1,30 +1,27 @@
 import React from "react";
-import { CiPlay1 } from "react-icons/ci";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaSalesforce, FaSearch } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
 import logo from "../Assets/dice-logo.png";
 import TrainingSub from "../expertise/TrainingSub";
 import ExpertDrop from "../expertise/ExpertDrop";
 import ServiceDrop from "../expertise/ServiceDrop";
+import Search from "./Search";
 
-const Navbar = ({ OPenFooter, OPenFooter2,OPenFooter3 }) => {
+const Navbar = ({ OPenFooter, OPenFooter2, OPenFooter3, SearchOPen }) => {
   const [show, setShow] = useState(false);
   const [openTraining, setTrainOpen] = useState(false);
   const [openExpert, setOpenExpert] = useState(false);
   const [openService, setOpenService] = useState(false);
-  const [timeoutId, setTimeoutId] = useState(null);
 
   const TrainingOpen = () => {
-    clearTimeout(timeoutId);
     setTrainOpen(true);
   };
 
   const closeTrain = () => {
-    const id = setTimeout(() => {
+    setTimeout(() => {
       setTrainOpen(false);
-    }, 2000);
-    setTimeoutId(id);
+    }, 0);
   };
 
   const ExpertiseOpen = () => {
@@ -32,23 +29,17 @@ const Navbar = ({ OPenFooter, OPenFooter2,OPenFooter3 }) => {
   };
 
   const closeExpertise = () => {
-    const id = setTimeout(() => {
+    setTimeout(() => {
       setOpenExpert(false);
-    }, 5000);
-    setTimeoutId(id);
+    }, 2000);
   };
   const ServiceOpen = () => {
-    if (!openService) {
-      setOpenService(true);
-    } else {
-      setOpenService(false);
-    }
+    setOpenService(true);
   };
   const closeService = () => {
-    const id = setTimeout(() => {
+    setTimeout(() => {
       setOpenService(false);
-    }, 5000);
-    setTimeoutId(id);
+    }, 2000);
   };
 
   return (
@@ -56,7 +47,7 @@ const Navbar = ({ OPenFooter, OPenFooter2,OPenFooter3 }) => {
       <nav className=" NavBar navbar navbar-expand-lg navbar-light  ">
         <div className="container ">
           <NavLink className="Odd-logo" to="/">
-            Learning The ODDS
+            LEARNING THE ODDS
           </NavLink>
           <button
             className="navbar-toggler"
@@ -128,7 +119,11 @@ const Navbar = ({ OPenFooter, OPenFooter2,OPenFooter3 }) => {
               </li>
               {openService && <ServiceDrop OPenFooter2={OPenFooter2} />}
               <li className="nav-item SearchBar ">
-                <NavLink className="nav-link" to="/" onClick={OPenFooter}>
+                <NavLink
+                  className="nav-link"
+                  onMouseUp={SearchOPen}
+                  onClick={OPenFooter}
+                >
                   <FaSearch className="Nav-search" />
                 </NavLink>
               </li>

@@ -4,7 +4,7 @@
   background: url("../Assets/about3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -60px;
+  /* margin-top: -30px; */
 }
 .About-Text {
   padding: 150px 80px;

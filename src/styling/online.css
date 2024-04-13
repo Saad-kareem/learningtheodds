@@ -1,7 +1,6 @@
 .OnlineTrain {
   height: 100%;
 }
-
 .OnlineBack {
   height: 100%;
   width: 100%;
@@ -42,6 +41,7 @@
 }
 .OnlineService img {
   height: 400px;
+  width: 100%;
 }
 .OnlineCard {
   padding: 0px 70px;
@@ -89,7 +89,7 @@
   color: #fff;
   text-align: start;
   padding: 10px 5px;
-  top: 615px;
+  top: 94%;
   right: 50px;
   position: fixed;
 }
@@ -101,7 +101,7 @@
   height: 540px;
   width: 380px;
   position: fixed;
-  top: 115px;
+  top: 19%;
   right: 50px;
 }
 .Message-Menu {
@@ -174,7 +174,7 @@
     color: #fff;
     text-align: start;
     padding: 10px 5px;
-    top: 590px;
+    top: 615px;
     right: 30px;
     position: fixed;
   }

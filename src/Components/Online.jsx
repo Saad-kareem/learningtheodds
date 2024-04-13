@@ -11,7 +11,7 @@ const Online1 = () => {
           <span>
             <CiPlay1 />
           </span>
-          Learn Online with Dice!
+          Learn Online with ODDS!
         </NavLink>
       </button>
     </div>

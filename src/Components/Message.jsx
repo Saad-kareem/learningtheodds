@@ -21,11 +21,22 @@ const Message = ({ MessageClose }) => {
             action="https://formspree.io/f/xbjnpzyq"
             method="POST"
           >
-            <input type="text" className="form-control" placeholder="*Name" />
-            <input type="email" className="form-control" placeholder="*Email" />
+            <input
+              type="text"
+              className="form-control"
+              name="Name"
+              placeholder="*Name"
+            />
+            <input
+              type="email"
+              className="form-control"
+              name="Email"
+              placeholder="*Email"
+            />
             <input
               className="form-control textarea"
               placeholder="Message"
+              name="Message"
             ></input>
             <button className="btn btn-warning">Submit</button>
           </form>

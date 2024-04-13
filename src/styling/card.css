@@ -164,21 +164,21 @@
   padding: 10px 45px;
 }
 
- @media (max-width:900px){
-    .Price-Package button{
-       padding: 10px 15px;
-      font-size: 14px;
-    }
-    .Card_SUb{
-       margin-top: 30px;
-    }
-    .Card-Text h2{
-      font-size: 25px;
-    }
-    .Card-Text h3{
-      font-size: 23px;
-    }
-    .Card-Text span{
-      font-size: 30px;
-    }
- }
+@media (max-width: 900px) {
+  .Price-Package button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .Card_SUb {
+    margin-top: 30px;
+  }
+  .Card-Text h2 {
+    font-size: 25px;
+  }
+  .Card-Text h3 {
+    font-size: 23px;
+  }
+  .Card-Text span {
+    font-size: 30px;
+  }
+}

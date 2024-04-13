@@ -1,5 +1,6 @@
 import React from "react";
 import Scroll from "./Scroll";
+import { NavLink } from "react-router-dom";
 
 const Footer2 = () => {
   return (
@@ -12,7 +13,10 @@ const Footer2 = () => {
               We are here to help you succeed in your goals! Get in touch with
               us today and we’ll get back to you as quickly as possible!
             </p>
-            <button className="btn btn-outline-warning mt-4">CONTACT US!</button>
+            <button className="btn btn-outline-warning mt-4">
+              {" "}
+              <NavLink to="/contact">CONTACT US!</NavLink>
+            </button>
           </div>
           <div className="row Sub-Footer">
             <div className="col-md-3">
@@ -64,7 +68,7 @@ const Footer2 = () => {
           </div>
         </div>
       </div>
-        <Scroll/>
+      <Scroll />
     </div>
   );
 };
