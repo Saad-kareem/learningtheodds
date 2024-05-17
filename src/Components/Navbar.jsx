@@ -47,7 +47,7 @@ const Navbar = ({ OPenFooter, OPenFooter2, OPenFooter3, SearchOPen }) => {
       <nav className=" NavBar navbar navbar-expand-lg navbar-light  ">
         <div className="container ">
           <NavLink className="Odd-logo" to="/">
-            LEARNING THE ODDS
+            <img src={logo} style={{width:100, height:70}} />
           </NavLink>
           <button
             className="navbar-toggler"
@@ -125,6 +125,11 @@ const Navbar = ({ OPenFooter, OPenFooter2, OPenFooter3, SearchOPen }) => {
                   onClick={OPenFooter}
                 >
                   <FaSearch className="Nav-search" />
+                </NavLink>
+              </li>
+              <li className="nav-item ">
+                <NavLink className="nav-link" to="/register">
+                  SignUp
                 </NavLink>
               </li>
             </ul>

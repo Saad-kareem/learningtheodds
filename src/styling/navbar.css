@@ -37,10 +37,10 @@ a {
   color: red !important;
 } */
 .NavBar-list {
-  margin-left: 100px !important;
+  margin-left: 70px !important;
 }
 .NavBar-list li {
-  margin-left: 40px !important;
+  margin-left: 30px !important;
 }
 
 .NavBar-list a:hover {
@@ -233,6 +233,18 @@ li {
   cursor: pointer;
   margin-left: -60px;
   font-size: 25px;
+}
+.SignUP {
+  margin: 100px 200px;
+}
+.SignUP input {
+  margin: 10px 0;
+}
+.SignUP label{
+  margin-bottom: -5px;
+}
+.SignUP button {
+  margin: 10px 0;
 }
 @media (max-width: 900px) {
   .Sub-training {

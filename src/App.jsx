@@ -15,6 +15,8 @@ import Footer3 from "./Components/Footer3";
 import MessageOPen from "./Components/MessageOPen";
 import Search from "./Components/Search";
 import Contact from "./Components/Contact";
+import SignUp from "./Resgister/SIgnUp";
+import Login from "./Resgister/Login";
 
 const App = () => {
   const [open, setOPen] = useState(true);
@@ -64,7 +66,9 @@ const App = () => {
           <Route path="/recruitment/services/" element={<Service />} />
           <Route path="/odds-career-support" element={<ServiceCareer />} />
           <Route path="/live-trainings" element={<OnlineTrain />} />
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/register" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <MessageOPen />
         {open && <Footer2 />}

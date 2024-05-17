@@ -2,6 +2,24 @@ import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 
 const Message = ({ MessageClose }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const SubmitData = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch("http://localhost:8000/messages", {
+      method: "POST",
+      body: JSON.stringify({ name, email, message }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    console.log(response);
+    MessageClose();
+  };
+
   return (
     <div>
       <div className="Message">
@@ -16,29 +34,33 @@ const Message = ({ MessageClose }) => {
           </h5>
         </div>
         <div className="Message-Input shadow-lg">
-          <form
-            className="form-group"
-            action="https://formspree.io/f/xbjnpzyq"
-            method="POST"
-          >
+          <form className="form-group">
             <input
               type="text"
               className="form-control"
-              name="Name"
+              required
+              name={name}
               placeholder="*Name"
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               type="email"
               className="form-control"
-              name="Email"
+              required
+              name={email}
               placeholder="*Email"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <input
               className="form-control textarea"
               placeholder="Message"
-              name="Message"
-            ></input>
-            <button className="btn btn-warning">Submit</button>
+              required
+              name={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button className="btn btn-warning" onClick={SubmitData}>
+              Submit
+            </button>
           </form>
         </div>
       </div>
